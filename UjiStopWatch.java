@@ -17,7 +17,7 @@ public class UjiStopWatch {
         int[] numbers = new int[size];
         Random rand = new Random();
         
-        
+        //Mengisi array dengan angka acak
         for (int i = 0; i < size; i++) {
             numbers[i] = rand.nextInt(100000);
         }
