@@ -9,28 +9,29 @@ package com.mycompany.tugaspertemuan7;
  * @author marif
  */
 public class StopWatch {
-    
+
     private long startTime;
     private long endTime;
-    
+
+    //KONSTRUKTOR NO ARG
     public StopWatch()
     {
         this.startTime = System.currentTimeMillis();
     }
     
-    //Reset startTime ke waktu saat ini 
+    //Method untuk memulai stopwatch 
     public void start()
     {
         this.startTime = System.currentTimeMillis();
     }
     
-    //Setel endTime ke waktu saat ini 
+    //Method untuk menghentikan stopwatch
     public void stop()
     {
         this.endTime = System.currentTimeMillis();
     }
   
-    //Hitung selisih waktu dalam milidetik  
+    //Method untuk menghitung selisih waktu dalam milidetik  
     public long getElapsedTime()
     {
         return this.endTime - this.startTime;
